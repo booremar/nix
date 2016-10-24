@@ -47,9 +47,9 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 
 7) terminal resolution
 	#vidcontrol -i mode
-	#vidcontrol MODE_338
+	#vidcontrol MODE_X
 /etc/rc.conf
 	vesa_load="YES"
-	allscreens="MODE_333"
+	allscreens_flags="MODE_X"
 	
 8) xinit "de_path" :0
