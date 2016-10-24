@@ -52,4 +52,6 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	vesa_load="YES"
 	allscreens_flags="MODE_X"
 	
-8) xinit "de_path" :0
+8) xfce
+	pkg install xfce
+	echo "/usr/local/bin/startxfce4" > ~/.xinitrc
