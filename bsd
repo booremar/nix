@@ -35,23 +35,22 @@ vboxservice_enable="YES"
 ee /boot/loader.conf >>
 vboxdrv_load="YES"
 
-5)X Windows
-	pkg install xorg
-
-ee /etc/rc.conf >>	
-hald_enable="YES"
-dbus_enable="YES"
-
-6)change FQDN
+5)FQDN
 ee /etc/rc.conf >> hostname = "hostname.domain.com"
 
-7) terminal resolution
+6) terminal resolution
 	#vidcontrol -i mode
 	#vidcontrol MODE_X
 /etc/rc.conf
 	vesa_load="YES"
 	allscreens_flags="MODE_X"
 	
-8) xfce
-	pkg install xfce
+8) xorg + xfce + slim
+	pkg install xorg xfce slim
+	
+	ee /etc/rc.conf >>	
+	hald_enable="YES"
+	dbus_enable="YES"
+	slim_enable="YES"
+	
 	echo "/usr/local/bin/startxfce4" > ~/.xinitrc
