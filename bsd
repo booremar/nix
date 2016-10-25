@@ -55,3 +55,13 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	moused_enable="YES"
 	
 	echo "/usr/local/bin/startxfce4" > ~/.xinitrc
+	
+	
+9)	Edit /usr/local/etc/slim.conf, set theme:
+
+	pkg install xorg xfce slim
+	
+	/usr/local/share/slim/themes
+	
+	#current_theme       default
+	current_theme       freebsd
