@@ -64,4 +64,4 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	/usr/local/share/slim/themes
 	
 	#current_theme       default
-	current_theme       freebsd
+	current_theme       fbsd
