@@ -45,12 +45,13 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	vesa_load="YES"
 	allscreens_flags="MODE_X"
 	
-8) xorg + xfce + slim
-	pkg install xorg xfce slim
+8) xorg + xfce4 + slim
+	pkg install xorg xfce4 slim
 	
 	ee /etc/rc.conf >>	
 	hald_enable="YES"
 	dbus_enable="YES"
 	slim_enable="YES"
+	moused_enable="YES"
 	
 	echo "/usr/local/bin/startxfce4" > ~/.xinitrc
