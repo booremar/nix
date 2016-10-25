@@ -45,8 +45,8 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	vesa_load="YES"
 	allscreens_flags="MODE_X"
 	
-8) xorg + xfce4 + slim
-	pkg install xorg xfce4 slim
+8) xorg + xfce + slim
+	pkg install xorg xfce slim
 	
 	ee /etc/rc.conf >>	
 	hald_enable="YES"
