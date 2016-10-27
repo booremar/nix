@@ -4,6 +4,7 @@
       swap    /dev/sda2
       /       /dev/sda3
       /home   /dev/sda4
+* Select BIOS boot and partition type number 4 for fdisk, ef02 for gdisk, and bios_grub for parted.
 2)
       mkfs.ext4 /dev/sda1 -L boot
       mkswap    /dev/sda2 -L swap
