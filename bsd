@@ -59,7 +59,7 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	
 9)	Edit /usr/local/etc/slim.conf, set theme:
 
-	pkg install xorg xfce slim
+	pkg install slim-themes
 	
 	/usr/local/share/slim/themes
 	
