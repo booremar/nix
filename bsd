@@ -54,7 +54,7 @@ ee /etc/rc.conf >> hostname = "hostname.domain.com"
 	slim_enable="YES"
 	moused_enable="YES"
 	
-	echo "/usr/local/bin/startxfce4" > ~/.xinitrc
+	cp /usr/local/etc/xdg/xfce4/xinitrc ~/.xinitrc
 	
 	
 9)	Edit /usr/local/etc/slim.conf, set theme:
